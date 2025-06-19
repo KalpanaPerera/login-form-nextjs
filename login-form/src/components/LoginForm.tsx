@@ -46,7 +46,7 @@ export default function LoginForm() {
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
-            {/* Email Field */}
+            {/* Email */}
             <FormField
               control={form.control}
               name="email"
@@ -80,7 +80,7 @@ export default function LoginForm() {
                         {...field}
                         className="text-sm pr-10"
                       />
-                      {/* Eye Toggle Icon */}
+
                       <button
                         type="button"
                         onClick={() => setShowPassword((v) => !v)}
@@ -96,7 +96,7 @@ export default function LoginForm() {
               )}
             />
 
-            {/* Forgot Password Link */}
+            {/* Forgot Password */}
             <div className="text-sm text-left">
               <Link
                 href="/forgot-password"
@@ -113,7 +113,7 @@ export default function LoginForm() {
           </form>
         </Form>
 
-       {/* Register Redirect */}
+       {/* Register */}
         <div className="text-center">
           <p className="text-sm">
             Don’t have an account?{" "}
